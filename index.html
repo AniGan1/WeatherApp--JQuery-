@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        #container-wrapper{
+            margin: 0 auto;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2{
+            font-size: 32px;
+        }
+
+        #city{
+            font-size: 24px;
+        }
+
+        #container{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+
+    <title>Погода</title>
+</head>
+<body>
+    <div id="container-wrapper">
+        <h2>Погода</h2>
+        <b id="city">Название города</b>
+        <div id="container">
+            <p id="days"></p>
+            
+            <p id = 'temperatura'></p>
+        </div>
+
+        <form  id="form"> 
+            <label for="enterCity">
+                <p>Введите город:</p>
+                <input type="text"  id="enterCity">
+            </label>
+
+            <button type="submit"> Поиск</button>
+        </form>
+    </div>
+    
+    <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
